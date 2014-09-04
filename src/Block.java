@@ -5,11 +5,12 @@ public class Block {
 
 	private String blockType;
 	private int blockIteration;
-//	public double length;
-//	public double width;
-//	public double height;
-//	public double mass1;
-//	public double mass2;
+
+	public double length;
+	public double width;
+	public double height;
+	public double mass1;
+	public double mass2;
 	private double[] values = new double[5];
 
 	public Block(String[] record) {
@@ -40,6 +41,97 @@ public class Block {
 		double mass1 = values[3];
 		double mass2 = values[4];
 
-		//TODO add outlier finding
+		if (blockType.equals("A")) {
+			//finding proper length
+			if (length <= 10.5 && length >= 9.5) {
+			} else {
+				if (width <= 10.5 && width >= 9.5) values[0] = width;
+				else if (height <= 10.5 && height >= 9.5) values[0] = height;
+			}
+
+			//finding proper width
+			if (width <= 9.2 && width >= 8.2) {
+			} else {
+				if (length <= 9.2 && length >= 8.2) values[1] = length;
+				else if (height <= 9.2 && height >= 8.2) values[1] = height;
+			}
+
+			//finding proper height
+			if (height <= 4.2 && height >= 3.2) {
+			} else {
+				if (length <= 4.2 && length >= 3.2) values[2] = length;
+				else if (width <= 4.2 && width >= 3.2) values[2] = width;
+			}
+		} else if (blockType.equals("B")) {
+			//finding proper length
+			if (length <= 15.3 && length >= 14.3) {
+			} else {
+				if (width <= 15.3 && width >= 14.3) values[0] = width;
+				else if (height <= 15.3 && height >= 14.3) values[0] = height;
+			}
+
+			//finding proper width
+			if (width <= 9.2 && width >= 8.2) {
+			} else {
+				if (length <= 9.2 && length >= 8.2) values[1] = length;
+				else if (height <= 9.2 && height >= 8.2) values[1] = height;
+			}
+
+			//finding proper height
+			if (height <= 4.2 && height >= 3.2) {
+			} else {
+				if (length <= 4.2 && length >= 3.2) values[2] = length;
+				else if (width <= 4.2 && width >= 3.2) values[2] = width;
+			}
+		} else if (blockType.equals("C")) {
+			//finding proper length
+			if (length <= 20.5 && length >= 19.5) {
+			} else {
+				if (width <= 20.5 && width >= 19.5) values[0] = width;
+				else if (height <= 20.5 && height >= 19.5) values[0] = height;
+			}
+
+			//finding proper width
+			if (width <= 9.2 && width >= 8.2) {
+			} else {
+				if (length <= 9.2 && length >= 8.2) values[1] = length;
+				else if (height <= 9.2 && height >= 8.2) values[1] = height;
+			}
+
+			//finding proper height
+			if (height <= 4.2 && height >= 3.2) {
+			} else {
+				if (length <= 4.2 && length >= 3.2) values[2] = length;
+				else if (width <= 4.2 && width >= 3.2) values[2] = width;
+			}
+		}
+	}
+
+	public double getLength() {
+		return values[0];
+	}
+
+	public double getWidth() {
+		return values[1];
+	}
+
+	public double getHeight() {
+		return values[2];
+	}
+
+	public double getMass1() {
+		return values[3];
+	}
+
+	public double getMass2() {
+		return values[4];
+	}
+
+	public String getBlockType() {
+		return blockType;
+	}
+
+	public int getBlockIteration() {
+		return blockIteration;
 	}
 } //end of Block class
