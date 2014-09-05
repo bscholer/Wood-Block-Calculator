@@ -2,7 +2,10 @@ import au.com.bytecode.opencsv.CSVReader;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created by Ben Scholer on 9/4/14.
@@ -11,6 +14,7 @@ public class Main {
 
 	public static void main(String args[]) throws IOException {
 		Map<String, ArrayList<Block>> blockMap = new TreeMap<String, ArrayList<Block>>();
+		Map<String, Data> dataMap = new TreeMap<String, Data>();
 		List<Block> blocks = parseCSVFileLineByLine();
 
 		for (Block block : blocks) {
@@ -24,14 +28,17 @@ public class Main {
 				blockMap.put(block.getFullName(), blockArrayList);
 			}
 		}
-		int i = 0;
+
 		for (Map.Entry<String, ArrayList<Block>> entry : blockMap.entrySet()) {
-			if (i > 5) break;
 			System.out.println("\t\t\t" + entry.getKey());
 			for (Block block : entry.getValue()) {
 				System.out.println(block);
 			}
 			System.out.println();
+		}
+
+		for (Map.Entry<String, ArrayList<Block>> entry : blockMap.entrySet()) {
+			dataMap.put(entry.getKey(), new Data());
 		}
 	}
 
