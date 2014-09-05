@@ -5,8 +5,9 @@ public class Block {
 
 	private String blockType;
 	private int blockIteration;
+	private String fullName;
 
-//	public double length;
+	//	public double length;
 //	public double width;
 //	public double height;
 //	public double mass1;
@@ -15,7 +16,8 @@ public class Block {
 
 	public Block(String[] record) {
 		String fullName = record[0];
-		fullName.trim();
+		fullName = fullName.trim();
+		this.fullName = fullName;
 		if (fullName.contains("A")) {
 			blockType = "A";
 			fullName = fullName.replace("A", "");
@@ -42,7 +44,6 @@ public class Block {
 			e.printStackTrace();
 			System.out.println("Block " + blockType + blockIteration + " broke me.");
 		}
-
 
 		double length = values[0];
 		double width = values[1];
@@ -144,16 +145,18 @@ public class Block {
 		return blockIteration;
 	}
 
+	public String getFullName() {
+		return fullName;
+	}
+
 	@Override
 	public String toString() {
 		return "Block{" +
-				"blockType='" + blockType + '\'' +
-				", blockIteration=" + blockIteration +
-				", length=" + values[0] +
-				", width=" + values[1] +
-				", height=" + values[2] +
-				", mass1=" + values[3] +
-				", mass2=" + values[4] +
+				"length=" + values[0] +
+				"\twidth=" + values[1] +
+				"\theight=" + values[2] +
+				"\tmass1=" + values[3] +
+				"\tmass2=" + values[4] +
 				'}';
 	}
 } //end of Block class
