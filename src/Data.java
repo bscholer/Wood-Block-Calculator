@@ -87,6 +87,13 @@ public class Data {
 		double avgMass1s = totMass1s / mass1s.size();
 		double avgMass2s = totMass2s / mass2s.size();
 
+		if (mass1s.size() == 0) {
+			mass1s.add(0.0);
+		}
+		if (mass2s.size() == 0) {
+			mass2s.add(0.0);
+		}
+
 		double[] averages = {avgLengths, avgWidths, avgHeights, avgMass1s, avgMass2s};
 		double[] uncertainty = {(Collections.max(lengths) - Collections.min(lengths)) / 2,
 				(Collections.max(widths) - Collections.min(widths)) / 2,
@@ -99,7 +106,9 @@ public class Data {
 				(uncertainty[3] / averages[3]) * 100,
 				(uncertainty[4] / averages[4]) * 100};
 		double volume = averages[0] * averages[1] * averages[2];
-		double volumeUncertainty = uncertainty[0] + uncertainty[1] + uncertainty[2];
+		double volumeUncertainty = (percentUncertainty[0] / 100) + (percentUncertainty[1] / 100) +
+				(percentUncertainty[2] / 100);
+		volumeUncertainty *= volume;
 
 		return new Data(averages, uncertainty, percentUncertainty, volume, volumeUncertainty);
 	}
