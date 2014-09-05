@@ -6,11 +6,11 @@ public class Block {
 	private String blockType;
 	private int blockIteration;
 
-	public double length;
-	public double width;
-	public double height;
-	public double mass1;
-	public double mass2;
+//	public double length;
+//	public double width;
+//	public double height;
+//	public double mass1;
+//	public double mass2;
 	private double[] values = new double[5];
 
 	public Block(String[] record) {
@@ -18,22 +18,31 @@ public class Block {
 		fullName.trim();
 		if (fullName.contains("A")) {
 			blockType = "A";
-			fullName.replace("A", "");
+			fullName = fullName.replace("A", "");
 			blockIteration = Integer.parseInt(fullName);
 		} else if (fullName.contains("B")) {
 			blockType = "B";
-			fullName.replace("B", "");
+			fullName = fullName.replace("B", "");
 			blockIteration = Integer.parseInt(fullName);
 		} else {
 			blockType = "C";
-			fullName.replace("C", "");
+			fullName = fullName.replace("C", "");
 			blockIteration = Integer.parseInt(fullName);
 		}
-		values[0] = Double.parseDouble(record[1]);
-		values[1] = Double.parseDouble(record[2]);
-		values[2] = Double.parseDouble(record[3]);
-		values[3] = Double.parseDouble(record[4]);
-		values[4] = Double.parseDouble(record[5]);
+		for (int i = 0; i < record.length; i++) {
+			if (record[i] == "" || record[i] == null) record[i] = "0";
+		}
+		try {
+			values[0] = Double.parseDouble(record[1]);
+			values[1] = Double.parseDouble(record[2]);
+			values[2] = Double.parseDouble(record[3]);
+			values[3] = Double.parseDouble(record[4]);
+			values[4] = Double.parseDouble(record[5]);
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("Block " + blockType + blockIteration + " broke me.");
+		}
+
 
 		double length = values[0];
 		double width = values[1];
@@ -133,5 +142,18 @@ public class Block {
 
 	public int getBlockIteration() {
 		return blockIteration;
+	}
+
+	@Override
+	public String toString() {
+		return "Block{" +
+				"blockType='" + blockType + '\'' +
+				", blockIteration=" + blockIteration +
+				", length=" + values[0] +
+				", width=" + values[1] +
+				", height=" + values[2] +
+				", mass1=" + values[3] +
+				", mass2=" + values[4] +
+				'}';
 	}
 } //end of Block class
