@@ -115,6 +115,14 @@ public class Block {
 				else if (width <= 4.2 && width >= 3.2) values[2] = width;
 			}
 		}
+
+//		if (blockType.equals("A")) {
+//			if (Shared.isInRange(values[0], .5, 10)) values[0] = 0;
+//			if (Shared.isInRange(values[1], .5, 8.7)) values[1] = 0;
+//			if (Shared.isInRange(values[2], .5, 3.7)) values[2] = 0;
+//			if (Shared.isInRange(values[3], 1, 10)) values[3] = 0;
+//			if (Shared.isInRange(values[4], 1, 10)) values[4] = 0;
+//		}
 	}
 
 	public double getLength() {

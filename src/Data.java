@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -95,22 +96,82 @@ public class Data {
 		}
 
 		double[] averages = {avgLengths, avgWidths, avgHeights, avgMass1s, avgMass2s};
+
+		for (int i = 0; i < averages.length; i++) {
+			try {
+				if (averages[i] != 0) {
+					DecimalFormat decimalFormat = new DecimalFormat("##.#");
+
+					averages[i] = Double.parseDouble(decimalFormat.format(averages[i]));
+				}
+			} catch (Exception e) {
+
+			}
+		}
+
 		double[] uncertainty = {(Collections.max(lengths) - Collections.min(lengths)) / 2,
 				(Collections.max(widths) - Collections.min(widths)) / 2,
 				(Collections.max(heights) - Collections.min(heights)) / 2,
 				(Collections.max(mass1s) - Collections.min(mass1s)) / 2,
 				(Collections.max(mass2s) - Collections.min(mass2s)) / 2};
+
+		for (int i = 0; i < uncertainty.length; i++) {
+			try {
+				DecimalFormat decimalFormat = new DecimalFormat("##.##");
+
+				uncertainty[i] = Double.parseDouble(decimalFormat.format(uncertainty[i]));
+			} catch (Exception e) {
+
+			}
+		}
+
 		double[] percentUncertainty = {(uncertainty[0] / averages[0]) * 100,
 				(uncertainty[1] / averages[1]) * 100,
 				(uncertainty[2] / averages[2]) * 100,
 				(uncertainty[3] / averages[3]) * 100,
 				(uncertainty[4] / averages[4]) * 100};
+
+		for (int i = 0; i < percentUncertainty.length; i++) {
+			try {
+				DecimalFormat decimalFormat = new DecimalFormat("##.##");
+
+				percentUncertainty[i] = Double.parseDouble(decimalFormat.format(percentUncertainty[i]));
+			} catch (Exception e) {
+
+			}
+		}
+
 		double volume = averages[0] * averages[1] * averages[2];
-		double volumeUncertainty = (percentUncertainty[0] / 100) + (percentUncertainty[1] / 100) +
-				(percentUncertainty[2] / 100);
+
+		volume = Math.round(volume / Math.pow(10, 2 - 1)) * Math.pow(10, 2 - 1);
+
+		double volumeUncertainty = ((uncertainty[0] / averages[0])) + ((uncertainty[1] / averages[1])) +
+				((uncertainty[2] / averages[2]));
 		volumeUncertainty *= volume;
 
+		volumeUncertainty = Math.round(volumeUncertainty / Math.pow(10, 1 - 1)) * Math.pow(10, 1 - 1);
+
 		return new Data(averages, uncertainty, percentUncertainty, volume, volumeUncertainty);
+	}
+
+	public double[] getAverages() {
+		return averages;
+	}
+
+	public double[] getUncertainty() {
+		return uncertainty;
+	}
+
+	public double[] getPercentUncertainty() {
+		return percentUncertainty;
+	}
+
+	public double getVolume() {
+		return volume;
+	}
+
+	public double getVolumeUncertainty() {
+		return volumeUncertainty;
 	}
 
 	@Override

@@ -36,7 +36,7 @@ public class Main {
 		for (Map.Entry<String, ArrayList<Block>> entry : blockMap.entrySet()) {
 			System.out.println("\t\t\t" + entry.getKey());
 			for (Block block : entry.getValue()) {
-				System.out.println(block);
+//				System.out.println(block);
 			}
 			System.out.println(dataMap.get(entry.getKey()));
 			System.out.println();
