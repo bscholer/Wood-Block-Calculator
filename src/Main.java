@@ -1,6 +1,8 @@
 import au.com.bytecode.opencsv.CSVReader;
+import au.com.bytecode.opencsv.CSVWriter;
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +18,9 @@ public class Main {
 		Map<String, ArrayList<Block>> blockMap = new TreeMap<String, ArrayList<Block>>();
 		Map<String, Data> dataMap = new TreeMap<String, Data>();
 		List<Block> blocks = parseCSVFileLineByLine();
+		List<String[]> toWrite = new ArrayList<String[]>();
+		String[] header = {"Block #", "Volume", "Volume Uncertainty", "Volume ± Uncertainty"};
+		toWrite.add(header);
 
 		for (Block block : blocks) {
 			if (blockMap.containsKey(block.getFullName())) {
@@ -38,9 +43,14 @@ public class Main {
 			for (Block block : entry.getValue()) {
 //				System.out.println(block);
 			}
-			System.out.println(dataMap.get(entry.getKey()));
-			System.out.println();
+			Data data = dataMap.get(entry.getKey());
+			String[] strings = {data.getBlockName(), "" + data.getVolume(), "" + data.getVolumeUncertainty(),
+					data.getVolume() + " ± " + data.getVolumeUncertainty()};
+			toWrite.add(strings);
 		}
+		CSVWriter writer = new CSVWriter(new FileWriter("res/export.csv"));
+		writer.writeAll(toWrite);
+		writer.close();
 	}
 
 	private static List<Block> parseCSVFileLineByLine() throws IOException {

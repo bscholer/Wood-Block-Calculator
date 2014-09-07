@@ -14,16 +14,21 @@ public class Data {
 	private double[] percentUncertainty = new double[5];
 	private double volume;
 	private double volumeUncertainty;
+	private String blockName;
 
-	public Data(double[] averages, double[] uncertainty, double[] percentUncertainty, double volume, double volumeUncertainty) {
+	public Data(double[] averages, double[] uncertainty, double[] percentUncertainty, double volume,
+	            double volumeUncertainty, String blockName) {
 		this.averages = averages;
 		this.uncertainty = uncertainty;
 		this.percentUncertainty = percentUncertainty;
 		this.volume = volume;
 		this.volumeUncertainty = volumeUncertainty;
+		this.blockName = blockName;
 	}
 
 	public static Data math(ArrayList<Block> blocks) {
+		String name = blocks.get(0).getFullName();
+
 		List<Double> lengths = new ArrayList<Double>();
 		List<Double> widths = new ArrayList<Double>();
 		List<Double> heights = new ArrayList<Double>();
@@ -151,7 +156,7 @@ public class Data {
 
 		volumeUncertainty = Math.round(volumeUncertainty / Math.pow(10, 1 - 1)) * Math.pow(10, 1 - 1);
 
-		return new Data(averages, uncertainty, percentUncertainty, volume, volumeUncertainty);
+		return new Data(averages, uncertainty, percentUncertainty, volume, volumeUncertainty, name);
 	}
 
 	public double[] getAverages() {
@@ -172,6 +177,10 @@ public class Data {
 
 	public double getVolumeUncertainty() {
 		return volumeUncertainty;
+	}
+
+	public String getBlockName() {
+		return blockName;
 	}
 
 	@Override

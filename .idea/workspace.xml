@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a57172e9-8395-48eb-a21c-f6a9719908e0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Block.java" afterPath="$PROJECT_DIR$/src/Block.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Data.java" afterPath="$PROJECT_DIR$/src/Data.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Shared.java" afterPath="$PROJECT_DIR$/src/Shared.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Wood-Block-Calculator.iws" />
@@ -29,18 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48165137" vertical-offset="150" max-vertical-offset="915">
-              <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
-              <folding>
-                <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Block.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Block.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -54,24 +40,27 @@
       <file leaf-file-name="Data.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1379" max-vertical-offset="2715">
-              <caret line="151" column="96" selection-start-line="151" selection-start-column="96" selection-end-line="151" selection-end-column="96" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2226" max-vertical-offset="2940">
+              <caret line="181" column="34" selection-start-line="181" selection-start-column="34" selection-end-line="181" selection-end-column="34" />
               <folding>
-                <element signature="e#810#818#0" expanded="true" />
-                <element signature="e#859#867#0" expanded="true" />
-                <element signature="e#909#917#0" expanded="true" />
-                <element signature="e#958#966#0" expanded="true" />
-                <element signature="e#1007#1015#0" expanded="true" />
-                <element signature="e#4531#4532#0" expanded="true" />
-                <element signature="e#4553#4554#0" expanded="true" />
-                <element signature="e#4590#4591#0" expanded="true" />
-                <element signature="e#4615#4616#0" expanded="true" />
-                <element signature="e#4659#4660#0" expanded="true" />
-                <element signature="e#4691#4692#0" expanded="true" />
-                <element signature="e#4721#4722#0" expanded="true" />
-                <element signature="e#4741#4742#0" expanded="true" />
-                <element signature="e#4782#4783#0" expanded="true" />
-                <element signature="e#4813#4814#0" expanded="true" />
+                <element signature="method#Data#0;class#Data#0" expanded="true" />
+                <element signature="method#math#0;class#Data#0" expanded="true" />
+                <element signature="e#944#952#0" expanded="true" />
+                <element signature="e#993#1001#0" expanded="true" />
+                <element signature="e#1043#1051#0" expanded="true" />
+                <element signature="e#1092#1100#0" expanded="true" />
+                <element signature="e#1141#1149#0" expanded="true" />
+                <element signature="e#4671#4672#0" expanded="true" />
+                <element signature="e#4693#4694#0" expanded="true" />
+                <element signature="e#4730#4731#0" expanded="true" />
+                <element signature="e#4755#4756#0" expanded="true" />
+                <element signature="e#4799#4800#0" expanded="true" />
+                <element signature="e#4831#4832#0" expanded="true" />
+                <element signature="e#4861#4862#0" expanded="true" />
+                <element signature="e#4881#4882#0" expanded="true" />
+                <element signature="e#4922#4923#0" expanded="true" />
+                <element signature="e#4953#4954#0" expanded="true" />
+                <element signature="e#5009#5010#0" expanded="true" />
                 <element signature="method#toString#0;class#Data#0" expanded="true" />
               </folding>
             </state>
@@ -84,6 +73,19 @@
             <state vertical-scroll-proportion="0.0" vertical-offset="2385" max-vertical-offset="2475">
               <caret line="159" column="21" selection-start-line="159" selection-start-column="21" selection-end-line="159" selection-end-column="21" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.82438016" vertical-offset="216" max-vertical-offset="1035">
+              <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+              <folding>
+                <element signature="e#626#636#0" expanded="true" />
+                <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +107,8 @@
         <option value="$PROJECT_DIR$/res/Data.csv" />
         <option value="$PROJECT_DIR$/src/Shared.java" />
         <option value="$PROJECT_DIR$/src/Block.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Data.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -506,7 +508,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -525,7 +527,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.9105572" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24926686" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -570,6 +572,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="825" max-vertical-offset="1050">
           <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
           <folding>
+            <element signature="e#626#636#0" expanded="true" />
             <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
           </folding>
         </state>
@@ -588,21 +591,24 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1174" max-vertical-offset="1815">
           <caret line="108" column="66" selection-start-line="108" selection-start-column="66" selection-end-line="108" selection-end-column="66" />
           <folding>
-            <element signature="e#810#818#0" expanded="true" />
-            <element signature="e#859#867#0" expanded="true" />
-            <element signature="e#909#917#0" expanded="true" />
-            <element signature="e#958#966#0" expanded="true" />
-            <element signature="e#1007#1015#0" expanded="true" />
-            <element signature="e#4531#4532#0" expanded="true" />
-            <element signature="e#4553#4554#0" expanded="true" />
-            <element signature="e#4590#4591#0" expanded="true" />
-            <element signature="e#4615#4616#0" expanded="true" />
-            <element signature="e#4659#4660#0" expanded="true" />
-            <element signature="e#4691#4692#0" expanded="true" />
-            <element signature="e#4721#4722#0" expanded="true" />
-            <element signature="e#4741#4742#0" expanded="true" />
-            <element signature="e#4782#4783#0" expanded="true" />
-            <element signature="e#4813#4814#0" expanded="true" />
+            <element signature="method#Data#0;class#Data#0" expanded="true" />
+            <element signature="method#math#0;class#Data#0" expanded="true" />
+            <element signature="e#944#952#0" expanded="true" />
+            <element signature="e#993#1001#0" expanded="true" />
+            <element signature="e#1043#1051#0" expanded="true" />
+            <element signature="e#1092#1100#0" expanded="true" />
+            <element signature="e#1141#1149#0" expanded="true" />
+            <element signature="e#4671#4672#0" expanded="true" />
+            <element signature="e#4693#4694#0" expanded="true" />
+            <element signature="e#4730#4731#0" expanded="true" />
+            <element signature="e#4755#4756#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="e#4831#4832#0" expanded="true" />
+            <element signature="e#4861#4862#0" expanded="true" />
+            <element signature="e#4881#4882#0" expanded="true" />
+            <element signature="e#4922#4923#0" expanded="true" />
+            <element signature="e#4953#4954#0" expanded="true" />
+            <element signature="e#5009#5010#0" expanded="true" />
             <element signature="method#toString#0;class#Data#0" expanded="true" />
           </folding>
         </state>
@@ -629,6 +635,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="825" max-vertical-offset="1050">
           <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
           <folding>
+            <element signature="e#626#636#0" expanded="true" />
             <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
           </folding>
         </state>
@@ -647,21 +654,24 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1114" max-vertical-offset="1815">
           <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
           <folding>
-            <element signature="e#810#818#0" expanded="true" />
-            <element signature="e#859#867#0" expanded="true" />
-            <element signature="e#909#917#0" expanded="true" />
-            <element signature="e#958#966#0" expanded="true" />
-            <element signature="e#1007#1015#0" expanded="true" />
-            <element signature="e#4531#4532#0" expanded="true" />
-            <element signature="e#4553#4554#0" expanded="true" />
-            <element signature="e#4590#4591#0" expanded="true" />
-            <element signature="e#4615#4616#0" expanded="true" />
-            <element signature="e#4659#4660#0" expanded="true" />
-            <element signature="e#4691#4692#0" expanded="true" />
-            <element signature="e#4721#4722#0" expanded="true" />
-            <element signature="e#4741#4742#0" expanded="true" />
-            <element signature="e#4782#4783#0" expanded="true" />
-            <element signature="e#4813#4814#0" expanded="true" />
+            <element signature="method#Data#0;class#Data#0" expanded="true" />
+            <element signature="method#math#0;class#Data#0" expanded="true" />
+            <element signature="e#944#952#0" expanded="true" />
+            <element signature="e#993#1001#0" expanded="true" />
+            <element signature="e#1043#1051#0" expanded="true" />
+            <element signature="e#1092#1100#0" expanded="true" />
+            <element signature="e#1141#1149#0" expanded="true" />
+            <element signature="e#4671#4672#0" expanded="true" />
+            <element signature="e#4693#4694#0" expanded="true" />
+            <element signature="e#4730#4731#0" expanded="true" />
+            <element signature="e#4755#4756#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="e#4831#4832#0" expanded="true" />
+            <element signature="e#4861#4862#0" expanded="true" />
+            <element signature="e#4881#4882#0" expanded="true" />
+            <element signature="e#4922#4923#0" expanded="true" />
+            <element signature="e#4953#4954#0" expanded="true" />
+            <element signature="e#5009#5010#0" expanded="true" />
             <element signature="method#toString#0;class#Data#0" expanded="true" />
           </folding>
         </state>
@@ -688,6 +698,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="1050">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
+            <element signature="e#626#636#0" expanded="true" />
             <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
           </folding>
         </state>
@@ -706,21 +717,24 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1096" max-vertical-offset="1680">
           <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
           <folding>
-            <element signature="e#810#818#0" expanded="true" />
-            <element signature="e#859#867#0" expanded="true" />
-            <element signature="e#909#917#0" expanded="true" />
-            <element signature="e#958#966#0" expanded="true" />
-            <element signature="e#1007#1015#0" expanded="true" />
-            <element signature="e#4531#4532#0" expanded="true" />
-            <element signature="e#4553#4554#0" expanded="true" />
-            <element signature="e#4590#4591#0" expanded="true" />
-            <element signature="e#4615#4616#0" expanded="true" />
-            <element signature="e#4659#4660#0" expanded="true" />
-            <element signature="e#4691#4692#0" expanded="true" />
-            <element signature="e#4721#4722#0" expanded="true" />
-            <element signature="e#4741#4742#0" expanded="true" />
-            <element signature="e#4782#4783#0" expanded="true" />
-            <element signature="e#4813#4814#0" expanded="true" />
+            <element signature="method#Data#0;class#Data#0" expanded="true" />
+            <element signature="method#math#0;class#Data#0" expanded="true" />
+            <element signature="e#944#952#0" expanded="true" />
+            <element signature="e#993#1001#0" expanded="true" />
+            <element signature="e#1043#1051#0" expanded="true" />
+            <element signature="e#1092#1100#0" expanded="true" />
+            <element signature="e#1141#1149#0" expanded="true" />
+            <element signature="e#4671#4672#0" expanded="true" />
+            <element signature="e#4693#4694#0" expanded="true" />
+            <element signature="e#4730#4731#0" expanded="true" />
+            <element signature="e#4755#4756#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="e#4831#4832#0" expanded="true" />
+            <element signature="e#4861#4862#0" expanded="true" />
+            <element signature="e#4881#4882#0" expanded="true" />
+            <element signature="e#4922#4923#0" expanded="true" />
+            <element signature="e#4953#4954#0" expanded="true" />
+            <element signature="e#5009#5010#0" expanded="true" />
             <element signature="method#toString#0;class#Data#0" expanded="true" />
           </folding>
         </state>
@@ -739,6 +753,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="675">
           <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
           <folding>
+            <element signature="e#626#636#0" expanded="true" />
             <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
           </folding>
         </state>
@@ -757,21 +772,24 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1485" max-vertical-offset="1725">
           <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
           <folding>
-            <element signature="e#810#818#0" expanded="true" />
-            <element signature="e#859#867#0" expanded="true" />
-            <element signature="e#909#917#0" expanded="true" />
-            <element signature="e#958#966#0" expanded="true" />
-            <element signature="e#1007#1015#0" expanded="true" />
-            <element signature="e#4531#4532#0" expanded="true" />
-            <element signature="e#4553#4554#0" expanded="true" />
-            <element signature="e#4590#4591#0" expanded="true" />
-            <element signature="e#4615#4616#0" expanded="true" />
-            <element signature="e#4659#4660#0" expanded="true" />
-            <element signature="e#4691#4692#0" expanded="true" />
-            <element signature="e#4721#4722#0" expanded="true" />
-            <element signature="e#4741#4742#0" expanded="true" />
-            <element signature="e#4782#4783#0" expanded="true" />
-            <element signature="e#4813#4814#0" expanded="true" />
+            <element signature="method#Data#0;class#Data#0" expanded="true" />
+            <element signature="method#math#0;class#Data#0" expanded="true" />
+            <element signature="e#944#952#0" expanded="true" />
+            <element signature="e#993#1001#0" expanded="true" />
+            <element signature="e#1043#1051#0" expanded="true" />
+            <element signature="e#1092#1100#0" expanded="true" />
+            <element signature="e#1141#1149#0" expanded="true" />
+            <element signature="e#4671#4672#0" expanded="true" />
+            <element signature="e#4693#4694#0" expanded="true" />
+            <element signature="e#4730#4731#0" expanded="true" />
+            <element signature="e#4755#4756#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="e#4831#4832#0" expanded="true" />
+            <element signature="e#4861#4862#0" expanded="true" />
+            <element signature="e#4881#4882#0" expanded="true" />
+            <element signature="e#4922#4923#0" expanded="true" />
+            <element signature="e#4953#4954#0" expanded="true" />
+            <element signature="e#5009#5010#0" expanded="true" />
             <element signature="method#toString#0;class#Data#0" expanded="true" />
           </folding>
         </state>
@@ -798,6 +816,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="675">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
+            <element signature="e#626#636#0" expanded="true" />
             <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
           </folding>
         </state>
@@ -824,6 +843,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="585">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
+            <element signature="e#626#636#0" expanded="true" />
             <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
           </folding>
         </state>
@@ -850,6 +870,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="180">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding>
+            <element signature="e#626#636#0" expanded="true" />
             <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
           </folding>
         </state>
@@ -876,6 +897,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="180">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding>
+            <element signature="e#626#636#0" expanded="true" />
             <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
           </folding>
         </state>
@@ -907,34 +929,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1379" max-vertical-offset="2715">
-          <caret line="151" column="96" selection-start-line="151" selection-start-column="96" selection-end-line="151" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2226" max-vertical-offset="2940">
+          <caret line="181" column="34" selection-start-line="181" selection-start-column="34" selection-end-line="181" selection-end-column="34" />
           <folding>
-            <element signature="e#810#818#0" expanded="true" />
-            <element signature="e#859#867#0" expanded="true" />
-            <element signature="e#909#917#0" expanded="true" />
-            <element signature="e#958#966#0" expanded="true" />
-            <element signature="e#1007#1015#0" expanded="true" />
-            <element signature="e#4531#4532#0" expanded="true" />
-            <element signature="e#4553#4554#0" expanded="true" />
-            <element signature="e#4590#4591#0" expanded="true" />
-            <element signature="e#4615#4616#0" expanded="true" />
-            <element signature="e#4659#4660#0" expanded="true" />
-            <element signature="e#4691#4692#0" expanded="true" />
-            <element signature="e#4721#4722#0" expanded="true" />
-            <element signature="e#4741#4742#0" expanded="true" />
-            <element signature="e#4782#4783#0" expanded="true" />
-            <element signature="e#4813#4814#0" expanded="true" />
+            <element signature="method#Data#0;class#Data#0" expanded="true" />
+            <element signature="method#math#0;class#Data#0" expanded="true" />
+            <element signature="e#944#952#0" expanded="true" />
+            <element signature="e#993#1001#0" expanded="true" />
+            <element signature="e#1043#1051#0" expanded="true" />
+            <element signature="e#1092#1100#0" expanded="true" />
+            <element signature="e#1141#1149#0" expanded="true" />
+            <element signature="e#4671#4672#0" expanded="true" />
+            <element signature="e#4693#4694#0" expanded="true" />
+            <element signature="e#4730#4731#0" expanded="true" />
+            <element signature="e#4755#4756#0" expanded="true" />
+            <element signature="e#4799#4800#0" expanded="true" />
+            <element signature="e#4831#4832#0" expanded="true" />
+            <element signature="e#4861#4862#0" expanded="true" />
+            <element signature="e#4881#4882#0" expanded="true" />
+            <element signature="e#4922#4923#0" expanded="true" />
+            <element signature="e#4953#4954#0" expanded="true" />
+            <element signature="e#5009#5010#0" expanded="true" />
             <element signature="method#toString#0;class#Data#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/export.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48165137" vertical-offset="150" max-vertical-offset="915">
-          <caret line="40" column="58" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.82438016" vertical-offset="216" max-vertical-offset="1035">
+          <caret line="52" column="23" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
           <folding>
+            <element signature="e#626#636#0" expanded="true" />
             <element signature="method#parseCSVFileLineByLine#0;class#Main#0" expanded="true" />
           </folding>
         </state>
