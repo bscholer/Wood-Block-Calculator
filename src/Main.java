@@ -19,7 +19,10 @@ public class Main {
 		Map<String, Data> dataMap = new TreeMap<String, Data>();
 		List<Block> blocks = parseCSVFileLineByLine();
 		List<String[]> toWrite = new ArrayList<String[]>();
+		List<String[]> toWriteMore = new ArrayList<String[]>();
+		String[] headerMore = {"Description", "Block #", "Length", "Width", "Height", "Mass(scale 1)", "Mass(scale 2)"};
 		String[] header = {"Block #", "Volume", "Volume Uncertainty", "Volume ± Uncertainty"};
+		toWriteMore.add(headerMore);
 		toWrite.add(header);
 
 		for (Block block : blocks) {
@@ -47,10 +50,30 @@ public class Main {
 			String[] strings = {data.getBlockName(), "" + data.getVolume(), "" + data.getVolumeUncertainty(),
 					data.getVolume() + " ± " + data.getVolumeUncertainty()};
 			toWrite.add(strings);
+
+			String[] stringsAvg = {"Averages", data.getBlockName(), "" + data.getAverages()[0],
+					"" + data.getAverages()[1], "" + data.getAverages()[2], "" + data.getAverages()[3],
+					"" + data.getAverages()[4]};
+			String[] stringsUnc = {"Uncertainties", data.getBlockName(), "" + data.getUncertainty()[0],
+					"" + data.getUncertainty()[1], "" + data.getUncertainty()[2], "" + data.getUncertainty()[3],
+					"" + data.getUncertainty()[4]};
+			String[] stringsUncPer = {"Percent Uncertainties", data.getBlockName(),
+					data.getPercentUncertainty()[0] + "%",
+					data.getPercentUncertainty()[1] + "%",
+					data.getPercentUncertainty()[2] + "%",
+					data.getPercentUncertainty()[3] + "%",
+					data.getPercentUncertainty()[4] + "%"};
+			toWriteMore.add(stringsAvg);
+			toWriteMore.add(stringsUnc);
+			toWriteMore.add(stringsUncPer);
 		}
-		CSVWriter writer = new CSVWriter(new FileWriter("res/export.csv"));
+		CSVWriter writer = new CSVWriter(new FileWriter("res/Calculated Data.csv"));
 		writer.writeAll(toWrite);
 		writer.close();
+
+		CSVWriter writerMore = new CSVWriter(new FileWriter("res/More Calculated Data.csv"));
+		writerMore.writeAll(toWriteMore);
+		writerMore.close();
 	}
 
 	private static List<Block> parseCSVFileLineByLine() throws IOException {
