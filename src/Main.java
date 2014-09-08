@@ -20,8 +20,11 @@ public class Main {
 		List<Block> blocks = parseCSVFileLineByLine();
 		List<String[]> toWrite = new ArrayList<String[]>();
 		List<String[]> toWriteMore = new ArrayList<String[]>();
+		List<String[]> toWriteDensity = new ArrayList<String[]>();
 		String[] headerMore = {"Description", "Block #", "Length", "Width", "Height", "Mass(scale 1)", "Mass(scale 2)"};
 		String[] header = {"Block #", "Volume", "Volume Uncertainty", "Volume ± Uncertainty"};
+		String[] headerDensity = {"Block #", "Mass", "Volume"};
+		toWriteDensity.add(headerDensity);
 		toWriteMore.add(headerMore);
 		toWrite.add(header);
 
@@ -66,6 +69,9 @@ public class Main {
 			toWriteMore.add(stringsAvg);
 			toWriteMore.add(stringsUnc);
 			toWriteMore.add(stringsUncPer);
+
+			String[] stringsVolume = {data.getBlockName(), "" + data.getAverages()[4], "" + data.getVolume()};
+			toWriteDensity.add(stringsVolume);
 		}
 		CSVWriter writer = new CSVWriter(new FileWriter("res/Calculated Data.csv"));
 		writer.writeAll(toWrite);
@@ -74,6 +80,10 @@ public class Main {
 		CSVWriter writerMore = new CSVWriter(new FileWriter("res/More Calculated Data.csv"));
 		writerMore.writeAll(toWriteMore);
 		writerMore.close();
+
+		CSVWriter writerDensity = new CSVWriter(new FileWriter("res/Density Data.csv"));
+		writerDensity.writeAll(toWriteDensity);
+		writerDensity.close();
 	}
 
 	private static List<Block> parseCSVFileLineByLine() throws IOException {
